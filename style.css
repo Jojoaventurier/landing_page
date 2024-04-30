@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+#container1 {
+    background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
+    height : 100vh;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerLinks {
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+} 
+
+#presentationSection {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#articlePresentation {
+    width: 40vw;
+}
+
+#figurePresentation {
+    width : 55vw;
+}
