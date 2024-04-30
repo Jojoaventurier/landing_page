@@ -33,15 +33,16 @@ li{
 
 #presentationSection {
     display: flex;
-    flex-wrap:nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 #articlePresentation {
-    width: 40vw;
+    width: 40%;
+    color:black;
+    text-align: justify;
 }
 
 #figurePresentation {
-    width : 55vw;
+    width : 40%;
 }
