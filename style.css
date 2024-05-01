@@ -73,7 +73,7 @@ form {
 }
 
 #subscribeButton {
-    background: radial-gradient(circle at center, rgb(139 ,195, 245), #1bc2f0);
+    background: #1294b8;
     border : none;
     border-radius : 20px;
     height: 80%;
