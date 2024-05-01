@@ -20,6 +20,7 @@ header {
     align-items: center;
 }
 
+
 h2 {
     font-size: 2em;
 }
@@ -38,6 +39,12 @@ li{
     display: inline-block;
     margin: 0 10px;
 } 
+
+#socialsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 4%;
+}
 
 #presentationSection {
     display: flex;
@@ -64,26 +71,38 @@ form {
 }
 
 #subscribeInput {
-    background: white;
+    background: rgba(255,255,255,0.5);
     border: none;
     border-radius: 25px;
     padding: 1rem 2rem;
     width: 100%;
     outline: none;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
 }
 
 #subscribeButton {
+
+    color: white;
     background: #1294b8;
     border : none;
     border-radius : 20px;
     height: 80%;
-    width: 100px;
+    width: 130px;
     aspect-ratio: 1;
 
     position: absolute;
     right: 5px;
     top: 10%;
-}
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+#subscribeButton:hover {
+    background-color: rgba(255,255,255);
+    color: #009ac9;
+    border-color: #009ac9;
+  }
 
 #figurePresentation {
     width : 45%;
