@@ -80,7 +80,8 @@ h2 {
 }
 
 .greyParagraph {
-    color: grey;
+    color: rgb(167, 167, 167);
+    font-size: large;
 }
 
 form {
@@ -140,10 +141,11 @@ form {
 #articleProductsFeatures {
     justify-content: center;
     margin-bottom: 50px;
+    width: 30%;
 }
 
 #productsFeaturesTitle {
-    font-size: 2em;
+    font-size: 3rem;
     margin: 20px 0;
 }
 
@@ -156,27 +158,30 @@ form {
 }
 
 .card {
-    width: 400px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
     border-radius: 30px;
     margin: 0 10px;
-    padding: 20px;
+    padding: 30px 30px;
     color: white;
     align-content: center;
 }
 
 .cardTitle {
     margin-top: 30px;
+    font-size: xx-large;
+    font-weight: 500;
 }
 
 .cardParagraph {
-    font-size: 13px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 #howItWorks {
     display:flex;
-    height: 100vh;
+    height: 70vh;
     background: rgb(247, 247, 247);
     text-align: center;
     justify-content: center;
@@ -184,16 +189,18 @@ form {
 
 #howItWorksArticle {
     width: 30vw;
+    margin-top: 20px;
 }
 
 #teamSection {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #teamParagraphs {
-    width: 70%;
+    width: 35%;
     text-align: center;
     margin: 50px auto;
 
