@@ -71,6 +71,18 @@ h2 {
     margin: 30px 0px;
 }
 
+.blackParagraph {
+    color: black;
+}
+
+.whiteParagraph {
+    color: white;
+}
+
+.greyParagraph {
+    color: grey;
+}
+
 form {
     max-width: 100%;
     position: relative;
@@ -163,5 +175,32 @@ form {
 }
 
 #howItWorks {
+    display:flex;
     height: 100vh;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    justify-content: center;
 }
+
+#howItWorksArticle {
+    width: 30vw;
+}
+
+.smallTitles {
+    font-size: 2em;
+    padding-top: 50px;
+}
+
+.roundPortrait{
+    border-radius: 50%;
+    height: 240px;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.teamCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
