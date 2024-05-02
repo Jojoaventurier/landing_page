@@ -254,9 +254,58 @@ h5 {
 
 #parallaxSection {
     min-height: 50vh;
-    background-image: url(/img/parallax.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/parallax.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parallaxArticle {
+    width: 60vw;
+}
+
+#parallaxTitle {
+    font-size: 2em;
+}
+
+#getStarted {
+    color: white;
+    text-decoration: none;
+    border: solid white 1px;
+    width: 120px;
+    padding: 5px;
+    margin: 40px 0;
+}
+
+#blogSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogHeader {
+    text-align: center;
+}
+
+.blogArticles {
+    display: flex;
+
+}
+.blogCard {
+}
+
+.blogImages {
+    height: 300px;
+    justify-self: center;
+    margin: 0 auto;
 }
