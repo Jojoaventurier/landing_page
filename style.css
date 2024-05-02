@@ -113,3 +113,55 @@ form {
 #figurePresentation {
     width : 45%;
 }
+
+#productFeaturesSection {
+    background: white;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#articleProductsFeatures {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#productsFeaturesTitle {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#cardsContainer {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    align-content: center;
+}
+
+.cardTitle {
+    margin-top: 30px;
+}
+
+.cardParagraph {
+    font-size: 13px;
+}
+
+#howItWorks {
+    height: 100vh;
+}
