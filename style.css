@@ -186,6 +186,24 @@ form {
     width: 30vw;
 }
 
+#teamSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#teamParagraphs {
+    width: 70%;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.teamParagraph1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .smallTitles {
     font-size: 2em;
     padding-top: 50px;
@@ -201,6 +219,44 @@ form {
 .teamCards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 50px 0;
 }
 
+.teamCard {
+    margin: 0 30px;
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    color: grey;
+    font-weight: 300;    
+    text-align: center;
+}
+
+.spanCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blackSpan {
+    color: black;
+    font-size: 2em;
+}
+
+.greySpan {
+    color: grey;
+}
+
+#parallaxSection {
+    min-height: 50vh;
+    background-image: url(/img/parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
