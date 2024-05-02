@@ -62,6 +62,10 @@ li{
 }
 
 h1 {
+    font-size: 1em;
+}
+
+h2 {
     font-size: 4em;
     font-weight: 700;
     margin: 30px 0px;
@@ -83,6 +87,7 @@ form {
 }
 
 #subscribeButton {
+    cursor: pointer;
     color: white;
     background: #1294b8;
     border : none;
