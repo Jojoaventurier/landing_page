@@ -144,7 +144,7 @@ form {
     width: 30%;
 }
 
-#productsFeaturesTitle {
+.sectionTitles {
     font-size: 3rem;
     margin: 20px 0;
 }
@@ -201,14 +201,14 @@ form {
 }
 
 #teamParagraphs {
-    width: 35%;
+    width: 45%;
     text-align: center;
     margin: 50px auto;
 
 }
 
 .teamParagraph1 {
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: bold;
 }
 
