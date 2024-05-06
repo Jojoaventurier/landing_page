@@ -158,8 +158,9 @@ form {
 }
 
 .card {
-    width: 500px;
-    height: 500px;
+    flex-wrap: wrap;
+    max-width: 30%;
+    height: 100%;
     background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
     border-radius: 30px;
     margin: 0 10px;
@@ -338,3 +339,37 @@ h5 {
     color:#009ac9;
     text-decoration: none;
 }
+
+#pricingSection {
+    height: 100vh;
+}
+
+#pricingContainer1 {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#pricingContainer2 {
+    padding: 15px;
+    align-content: space-between;
+}  
+
+#pricingArticle {
+    text-align: justify;
+}
+
+
+#pricingSpans {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#pricingImage{
+    width: 100%;
+}
+
+
