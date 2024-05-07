@@ -286,23 +286,24 @@ h5 {
     font-size: 2em;
 }
 
-.getStarted {
+.getStarted a {
     color: white;
     text-decoration: none;
     border: solid white 1px;
     width: 120px;
-    padding: 5px;
-    margin: 40px 0;
+    padding: 10px 10px;
     border-radius: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
-/*ne fonctionne pas*/
-.getStarted :hover {
-    display: inline-block;
-    -ms-transform: scale(5.5, 5.5); /* IE 9 */
-    -webkit-transform: scale(5.5, 5.5); /* Safari */
-    transform: scale(5.5, 5.5);
+
+
+.getStarted  :hover {
+    background: white;
+    color: black;
 }
 /*ne fonctionne pas*/
 
@@ -391,7 +392,7 @@ h5 {
     color: white;
     background-color: rgb(139 ,195, 245);
     padding: 10px 20px;
-    border-radius: 7px;
+    border-radius: 8px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -401,7 +402,7 @@ h5 {
 .learnMoreButton :hover {
     background-color: rgba(255,255,255);
     color: #009ac9;
-    border-color: #009ac9;
+    border: solid #009ac9 1px;
 }
 
 #pricingImageContainer {
@@ -476,7 +477,7 @@ h4{
 .joinNowButton :hover {
     background-color: rgba(255,255,255);
     color: #009ac9;
-    border-color: #009ac9;
+    border: solid #009ac9 1px;
   }
 
 .fa-circle-check {
