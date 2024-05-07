@@ -13,6 +13,8 @@
     text-decoration: none;
 }
 
+
+/*<========================HEADER========================>*/
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -47,6 +49,7 @@ li{
     width: 4%;
 }
 
+/*<========================PresentationSECTION========================>*/
 #presentationSection {
     display: flex;
     justify-content: space-evenly;
@@ -127,6 +130,8 @@ form {
     width : 45%;
 }
 
+
+/*<========================ProductFEATURES========================>*/
 #productFeaturesSection {
     background: white;
     height: 100vh;
@@ -180,6 +185,8 @@ form {
     font-weight: 300;
 }
 
+
+/*<========================HowDoesItWork========================>*/
 #howItWorks {
     display:flex;
     height: 70vh;
@@ -217,26 +224,27 @@ form {
     padding-top: 50px;
 }
 
-.roundPortrait {
-    border-radius: 50%;
+.figureClass {
+    display: flex;
     height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.roundPortrait {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 }
 
 
 .teamCard :hover .roundPortrait {
     filter: grayscale(0%);
-    transform: scale(1.2);
     -webkit-filter: grayscale(0%);
-    -webkit-transform: scale(1.2);
-    width: 100%;
-    
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .teamCards {
@@ -442,6 +450,13 @@ h4{
     padding: 18px 0;;
 }
 
+
+.dollar {
+    font-size: 3rem;
+    position: relative;
+    bottom: 11px;
+}
+
 #priceCards {
     display: flex;
     width: 100%;
@@ -461,6 +476,10 @@ h4{
 #middleCard {
     position: relative;
     bottom: 15px; 
+}
+
+.vingtPourCent {
+
 }
 
 .priceCard table {
@@ -527,4 +546,6 @@ footer a {
 .card:hover {
     transform: translate(0, -20px)
 }
+
+
 
