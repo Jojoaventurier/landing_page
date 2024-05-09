@@ -451,7 +451,7 @@ h4{
 }
 
 
-.priceCard :hover {
+.priceCard:hover {
     transform: translate(0, -20px)
 }
 /*////////////////////////////////////////////////////////////////////////////////////////*/
@@ -467,8 +467,20 @@ h4{
     bottom: 15px; 
 }
 
-.vingtPourCent {
+.twentyOff {
+    background-color: rgb(139 ,195, 245);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 86%;
+    bottom: 87%;
+}
 
+.twentyOff p {
+    position: absolute;
+    top: -13px;
 }
 
 .priceCard table {
