@@ -254,6 +254,13 @@ form {
     -webkit-transform: scale(1.1);
 }
 
+.teamCard a{
+    visibility: hidden;
+}
+
+.teamCard a:hover {
+}
+
 .teamCards {
     display: flex;
     flex-direction: row;
