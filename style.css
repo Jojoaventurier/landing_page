@@ -6,16 +6,28 @@
     font-family: "Poppins";
 }
 
+.fa-solid {
+    margin: 0;
+    padding: 0;
+}
+
 #scrollUpButton {
     position: fixed;
     bottom: 2%;
     right: 2%;
-    color: black;
-    background-color: transparent;
-    padding: 12px;
-    border-radius: 60px;
-    border: solid 1px black;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    padding: 8px 14px;
+    border-radius: 50%;
+    filter:opacity(70%);
+    transition-duration: 0.3s;
 }
+
+#scrollUpButton:hover {
+    filter: opacity(100%);
+}
+
+
 
 #container1 {
     background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
