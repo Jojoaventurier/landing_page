@@ -6,6 +6,17 @@
     font-family: "Poppins";
 }
 
+#scrollUpButton {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    color: black;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 60px;
+    border: solid 1px black;
+}
+
 #container1 {
     background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
     height : 100vh;
