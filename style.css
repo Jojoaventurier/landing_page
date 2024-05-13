@@ -90,7 +90,7 @@ li{
   }
   
 
-/*<========================PresentationSECTION========================>*/
+/*<========================PRESENTATION SECTION========================>*/
 #presentationSection {
     display: flex;
     justify-content: space-evenly;
@@ -403,8 +403,19 @@ h5 {
 
 .clientLogo {
     width: 200px;
-    margin: 0 50px;
+    margin: 0 30px;
+    transition:all 0.3 ease;
+    transform: scale(0.7);
+    filter: opacity(0.5);
 }
+
+
+.clientLogo:hover {
+    transform: scale(1);
+    filter: opacity(1);
+}
+
+
 
 
 /*<========================PRICING SECTION========================>*/
