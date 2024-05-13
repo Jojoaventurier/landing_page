@@ -28,11 +28,6 @@ header {
     font-weight: bold;
 }
 
-.headerLinks {
-    color: white;
-    text-decoration: none;
-}
-
 ul{
     text-align: center;
     list-style-type: none;
@@ -48,6 +43,48 @@ li{
     justify-content: space-between;
     width: 4%;
 }
+
+.headerLinks {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .headerLinks::before,
+  .headerLinks::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .headerLinks::before {
+    background-color: white;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  .headerLinks::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: white;
+  }
+  
+  .headerLinks:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .headerlinks:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
 
 /*<========================PresentationSECTION========================>*/
 #presentationSection {
@@ -350,7 +387,8 @@ h5 {
     height: 70vh;
     background: rgb(247, 247, 247);
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .clientSaysArticle {
@@ -358,6 +396,12 @@ h5 {
     margin-top: 20px;
     align-self: center;
 }
+
+.clientLogo {
+    width: 200px;
+    margin: 0 50px;
+}
+
 
 /*<========================PRICING SECTION========================>*/
 #pricingSection1 {
@@ -481,7 +525,7 @@ h4{
     height: 50px;
     border-radius: 8px;
     position: absolute;
-    left: 86%;
+    left: 85%;
     bottom: 87%;
 }
 
