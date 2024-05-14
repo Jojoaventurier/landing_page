@@ -29,7 +29,7 @@
 
 
 
-#container1 {
+#presentationWrapper {
     background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
     height : 100vh;
     color: white;
@@ -40,7 +40,6 @@
 /*<========================HEADER========================>*/
 header {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -91,12 +90,10 @@ li{
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
   }
   .headerLinks::after {
-    content: attr(data-replace);
     height: 100%;
     top: 0;
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
     color: white;
   }
   
@@ -122,7 +119,6 @@ li{
 }
 
 #articlePresentation {
-
     width: 28%;
     color:black;
     text-align: justify;
@@ -174,7 +170,7 @@ form {
     border-radius : 20px;
     height: 80%;
     width: 130px;
-    aspect-ratio: 1;
+  
 
     position: absolute;
     right: 5px;
@@ -221,7 +217,6 @@ form {
 #cardsContainer {
     height: 50vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -355,7 +350,6 @@ form {
 
 .teamCards {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin: 50px 0;
 }
@@ -431,7 +425,7 @@ h5 {
 
 }
 
-.getStarted  :hover {
+.getStarted :hover {
     background: white;
     color: black;
 }
@@ -493,7 +487,7 @@ h5 {
 
 #pricingSpans {
     display: flex;
-    flex-direction: row;
+ 
 }
 
 .pricingSpan {
@@ -753,13 +747,35 @@ and (min-device-width : 0px)
 and (max-device-width : 767px) {
 
 *{
-    width: 100vw;
+    max-width: 100vw;
     height: auto;
 }
 
 
+.blackParagraph {
+    color: black;
+}
+
+.whiteParagraph {
+    color: white;
+}
+
+.greyParagraph {
+    color: rgb(167, 167, 167);
+    font-size: large;
+}
+
+
+#presentationWrapper {
+    height: auto;
+}
+
+/*<========================PRESENTATION SECTION========================>*/
 header{
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav {
@@ -776,18 +792,156 @@ li {
 }
 
 .headerLinks {
-    width:fit-content;
+    width: fit-content;
 }
 
 #kucra {
     justify-self: center;
+    margin-left: 10px;
 }
 
-#socialContainer {
+#socialsContainer {
+    width: 80vw;
 }
 
+
+#presentationSection {
+    height: auto;
+    width: 100vw;
+
+}
+#articlePresentation {
+    width: auto;
+    padding: 10px 25px;
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+#figurePresentation {
+    width: auto;
+}
+
+#figurePresentation img {
+    width: 350px;
+}
+
+/*<========================ProductFEATURES========================>*/
+
+.sectionTitles {
+    font-size: 2rem;
+}
+
+#productFeaturesSection {
+    margin-top: 80px;
+    height: auto;
+    max-width: 100vw;
+}
+
+#articleProductsFeatures {
+    width: 100vw;
+    padding: 10px 20px;
+}
+
+#cardsContainer {
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#cardsContainer {
+    height: auto;
+    width: 100vh;
+}
+
+.card {
+    max-width: 90%;
+    min-height: 20rem;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+}
+
+.cardParagraph {
+    font-size: 1rem;
+}
+
+/*<========================HowDoesItWork========================>*/
+
+.howItWorks {
+    width: 90vw;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+
+.howItWorksArticle {
+    width: 100%;
+}
+
+/*<========================TEAMSECTION========================>*/
+
+#teamSection {
+    height: auto;
+    width: 90vw;
+}
+
+#teamParagraphs {
+    height: auto;
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.teamCards {
+    flex-direction: column;
+    justify-content: none;
+}
+
+.teamCard {
+    padding: 10px 0;
+}
+
+h4, h5 {
+    padding: 5px 0;
+    margin: 0 0;
+}
+
+.spanCard {
+    margin-bottom: 60px;
+}
+
+.roundPortrait {
+    margin-top: 20px 0;
+}
+
+
+/*<========================PARALLAX SECTION========================>*/
+
+#parallaxSection {
+    min-height: auto;
+    width: 100vw;
+    padding-bottom: 50px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#parallaxArticle {
+    width: 80vw;
 }
 
 
 
 
+}
