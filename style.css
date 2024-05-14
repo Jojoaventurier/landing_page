@@ -29,14 +29,6 @@
 
 
 
-#presentationWrapper {
-    background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
-    height : 100vh;
-    color: white;
-    text-decoration: none;
-}
-
-
 /*<========================HEADER========================>*/
 header {
     display: flex;
@@ -110,10 +102,20 @@ li{
   }
   
 
-/*<========================PRESENTATION SECTION========================>*/
-#presentationSection {
+  #presentationWrapper {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    background: radial-gradient(circle at center, rgb(139 ,195, 245), #1294b8);
+    color: white;
+    text-decoration: none;
+    height: 100vh;
+}
+
+/*<========================PRESENTATION SECTION========================>*/
+
+.presentationSection {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 90%;
 }
@@ -487,7 +489,6 @@ h5 {
 
 #pricingSpans {
     display: flex;
- 
 }
 
 .pricingSpan {
@@ -505,8 +506,6 @@ h5 {
     background-color: rgb(139 ,195, 245);
     padding: 10px 20px;
     border-radius: 8px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     
 }
@@ -801,7 +800,7 @@ li {
 }
 
 #socialsContainer {
-    width: 80vw;
+    width: 30vw;
 }
 
 
@@ -812,7 +811,7 @@ li {
 }
 #articlePresentation {
     width: auto;
-    padding: 10px 25px;
+    padding: 10px 50px;
 }
 
 
@@ -930,7 +929,7 @@ h4, h5 {
     padding-bottom: 50px;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/parallax.png);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -942,6 +941,81 @@ h4, h5 {
 }
 
 
+/*<========================WHAT ARE CLIENTS SAY========================>*/
 
+
+.clientSays {
+    height: auto;
+    width: 100vw;
+}
+
+.clientSaysArticle {
+    width: 80%;
+    margin: 30px 0;
+}
+
+
+
+/*<========================PRICING SECTION========================>*/
+
+#pricingSection1 {
+    flex-direction: column;
+}
+
+#pricingContainerParent {
+    min-width: fit-content;
+    height: auto;
+}
+
+#pricingArticle p{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+#pricingSpans {
+    justify-content: space-around;
+}
+
+.learnMoreButton  {
+    margin: 25px 0;
+    align-self: center;
+}
+
+#pricingImageContainer {
+    width: 100%;
+}
+
+
+#pricingSection2 {
+    height: auto;
+    padding: 25px 0;
+}
+
+.pricingSectionArticle {
+    padding: 15px 40px;
+}
+
+#priceCards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.priceCard {
+    width: 80%;
+    text-align: center;
+}
+
+
+/*<========================BLOG SECTION========================>*/
+
+#blogSection{
+    height: auto;
+    width: 90vw;
+    padding: 40px 15px;
+}
+
+.blogArticles {
+    flex-direction: column;
+}
 
 }
