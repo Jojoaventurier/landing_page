@@ -804,9 +804,10 @@ li {
 }
 
 
-#presentationSection {
+.presentationSection {
     height: auto;
     width: 100vw;
+    flex-direction: column;
 
 }
 #articlePresentation {
@@ -820,11 +821,11 @@ h2 {
 }
 
 #figurePresentation {
-    width: auto;
+    width: 90%;
 }
 
 #figurePresentation img {
-    width: 350px;
+    width: 100%;
 }
 
 /*<========================ProductFEATURES========================>*/
@@ -889,7 +890,7 @@ h2 {
 
 #teamSection {
     height: auto;
-    width: 90vw;
+    width: 100vw;
 }
 
 #teamParagraphs {
@@ -900,7 +901,7 @@ h2 {
 
 .teamCards {
     flex-direction: column;
-    justify-content: none;
+    width: 100%;
 }
 
 .teamCard {
