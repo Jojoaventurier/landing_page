@@ -747,7 +747,7 @@ footer a {
     padding: 0 10px;
 }
 
-/*
+
 @media only screen
 and (min-device-width : 0px)
 and (max-device-width : 767px) {
@@ -759,32 +759,28 @@ and (max-device-width : 767px) {
 
 
 header{
-    display: flex;
     flex-direction: column;
-    justify-content: none;
-    align-items: none;
-}
-
-#kucra {
-    text-align: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
 }
+
 ul {
-    display: flex;
-    flex-direction: row;
     margin: 0;
     padding: 0;
 }
 
 li {
-    margin: 5px 0;
+    margin: 5px 10px;
+    width: fit-content;
 }
 
 .headerLinks {
+    width:fit-content;
+}
+
+#kucra {
+    justify-self: center;
 }
 
 #socialContainer {
