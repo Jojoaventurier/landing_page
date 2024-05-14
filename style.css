@@ -421,8 +421,6 @@ h5 {
     width: 120px;
     padding: 10px 10px;
     border-radius: 8px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 
 }
@@ -750,6 +748,11 @@ and (max-device-width : 767px) {
     height: auto;
 }
 
+#scrollUpButton {
+    bottom: 5%;
+    right: 5%;
+}
+
 
 .blackParagraph {
     color: black;
@@ -806,18 +809,27 @@ li {
 
 .presentationSection {
     height: auto;
-    width: 100vw;
+    width: auto;
     flex-direction: column;
 
 }
 #articlePresentation {
     width: auto;
-    padding: 10px 50px;
+    padding: 10px 30px;
+}
+
+#articlePresentation article {
+
+    padding: 10px 20px;
 }
 
 
 h2 {
     font-size: 2em;
+}
+
+#subscribeButton{
+    width: 100px;
 }
 
 #figurePresentation {
@@ -1011,7 +1023,7 @@ h4, h5 {
 
 #blogSection{
     height: auto;
-    width: 90vw;
+    width: 100vw;
     padding: 40px 15px;
 }
 
@@ -1019,4 +1031,8 @@ h4, h5 {
     flex-direction: column;
 }
 
+ .blogImages {
+    width: 100%;
+    height: auto;
+ }
 }
