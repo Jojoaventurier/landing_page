@@ -78,6 +78,15 @@ li{
     width: 8%;
 }
 
+.headerLinksSocials {
+    color: white;
+
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
 .headerLinks {
     color: white;
     text-decoration: none;
@@ -797,12 +806,15 @@ and (max-device-width : 767px) {
     display: contents;
 }
 
-
 #presentationWrapper {
     height: auto;
 }
 
 /*<========================PRESENTATION SECTION========================>*/
+
+.presentationSection {
+    flex-direction: column;
+}
 header{
     justify-content: center;
 }
@@ -824,94 +836,91 @@ header{
     zoom: 1.9;
 }
 
-
 ul,li{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    border-radius: 8px;;
-  }
-  
-  li{
-    height:50px;
-    line-height:50px;
-    padding:0 12px;
-    background:#1294b8;
-    border-radius: 8px;
-    width: 100%;
-  }
-
-
-li {
-    margin: 5px 10px;
-    width: fit-content;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 2;
+border-radius: 8px;;
 }
-  
-  #menu-button{
-    width:50px;
-    height:50px;
-    overflow:hidden;
-    background:#fff;
-    color:#1294b8;
-    line-height:50px;
-    text-align:center;
-    font-size:40px;
-    cursor:pointer;
-    transition:all .5s;
-    z-index: 3;
-    border-radius: 8px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  
-  #menu-button::after{
-    content:'×';
-    border-radius: 7px;
-    
-  }
-  #menu-button.close{
 
-    color:rgb(139 ,195, 245);
-    background:white;
-    border-radius: 7px;
-  }
+li{
+height:50px;
+line-height:50px;
+padding:0 12px;
+border-radius: 8px;
+width: 100%;
+margin: 5px 10px;
+width: fit-content;
+}
 
-  #menu-button.close::after{
-    content:'≡';
-  }
-  
-  #menu{
-    transition:transform .5s;
-    position:absolute;
-    width:100%;
-    max-width: 150px;
-    transform:translateY(-330px);
-  }
-  #menu.show-menu{
-    transform:translateY(200px);
-  }
+ 
+#menu-button{
+width:50px;
+height:50px;
+overflow:hidden;
+background:#fff;
+color:#1294b8;
+line-height:50px;
+text-align:center;
+font-size:40px;
+cursor:pointer;
+transition:all .5s;
+z-index: 3;
+border-radius: 8px;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+
+#menu-button::after{
+content:'×';
+border-radius: 7px;
+
+}
+#menu-button.close{
+
+color:rgb(139 ,195, 245);
+background:white;
+border-radius: 7px;
+}
+
+#menu-button.close::after{
+content:'≡';
+}
+
+#menu{
+transition:transform .5s;
+position:absolute;
+width:100%;
+transform:translateY(-330px);
+}
+
+#menu.show-menu{
+transform:translateY(205px);
+}
 
 .headerLinks {
     width: fit-content;
+    color: black;
 }
+
+
 
 .presentationSection {
+    flex-direction: column;
     height: auto;
     width: auto;
-    flex-direction: column;
-
 }
+
 #articlePresentation {
     width: auto;
     padding: 10px 30px;
 }
 
 #articlePresentation article {
-
     padding: 10px 20px;
 }
 
