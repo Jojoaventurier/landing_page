@@ -4,6 +4,11 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
 }
 
 .fa-solid {
@@ -739,6 +744,8 @@ footer a {
 }
 
 
+
+
 @media only screen
 and (min-device-width : 0px)
 and (max-device-width : 767px) {
@@ -774,14 +781,53 @@ and (max-device-width : 767px) {
 
 /*<========================PRESENTATION SECTION========================>*/
 header{
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 1em;
+    
 }
 
-nav {
-}
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  #kucra {
+    margin: 0;
+    padding: 0;
+  }
+
+  .topnav a.icon {
+    background: transparent;
+    padding: 0;
+    width: 10%;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .active {
+    background-color: transparent;
+    color: white;
+  }
 
 ul {
     margin: 0;
@@ -826,6 +872,7 @@ li {
 
 h2 {
     font-size: 2em;
+    margin-top: 0;
 }
 
 #subscribeButton{
@@ -1059,6 +1106,317 @@ h4, h5 {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
-
+    *{
+        max-width: 100vw;
+        height: auto;
+    }
     
-}
+    #scrollUpButton {
+        bottom: 5%;
+        right: 5%;
+    }
+    
+    
+    .blackParagraph {
+        color: black;
+    }
+    
+    .whiteParagraph {
+        color: white;
+    }
+    
+    .greyParagraph {
+        color: rgb(167, 167, 167);
+        font-size: large;
+    }
+    
+    
+    #presentationWrapper {
+        height: auto;
+    }
+    
+    /*<========================PRESENTATION SECTION========================>*/
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav {
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        margin: 5px 10px;
+        width: fit-content;
+    }
+    
+    .headerLinks {
+        width: fit-content;
+    }
+    
+    #kucra {
+        justify-self: center;
+        margin-left: 10px;
+    }
+    
+    #socialsContainer {
+        width: 30vw;
+    }
+    
+    
+    .presentationSection {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    
+    }
+    #articlePresentation {
+        width: auto;
+        padding: 10px 30px;
+    }
+    
+    #articlePresentation article {
+    
+        padding: 10px 20px;
+    }
+    
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    #subscribeButton{
+        width: 100px;
+    }
+    
+    #figurePresentation {
+        width: 90%;
+    }
+    
+    #figurePresentation img {
+        width: 100%;
+    }
+    
+    /*<========================ProductFEATURES========================>*/
+    
+    .sectionTitles {
+        font-size: 2rem;
+    }
+    
+    #productFeaturesSection {
+        margin-top: 80px;
+        height: auto;
+        max-width: 100vw;
+    }
+    
+    #articleProductsFeatures {
+        width: 90%;
+        padding: 10px 10px;
+    }
+    
+    #cardsContainer {
+        height: auto;
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #cardsContainer {
+        height: auto;
+        width: 100vh;
+    }
+    
+    .card {
+        max-width: 90%;
+        min-height: 20rem;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+    
+    .cardTitle {
+        font-size: 1.5rem;
+    }
+    
+    .cardParagraph {
+        font-size: 1rem;
+    }
+    
+    /*<========================HowDoesItWork========================>*/
+    
+    .howItWorks {
+        max-width: 100vw;
+        height: auto;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .howItWorksArticle {
+        width: 90%;
+        margin: 10px 10px;
+    }
+    
+    /*<========================TEAMSECTION========================>*/
+    
+    #teamSection {
+        height: auto;
+        max-width: 100vw;
+    }
+    
+    #teamParagraphs {
+        height: auto;
+        width: 90%;
+        padding: 10px 10px;
+    }
+    
+    .teamCards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .teamCard {
+        padding: 10px 0;
+    }
+    
+    h4, h5 {
+        padding: 5px 0;
+        margin: 0 0;
+    }
+    
+    .spanCard {
+        margin-bottom: 60px;
+    }
+    
+    .roundPortrait {
+        margin-top: 20px 0;
+    }
+    
+    
+    /*<========================PARALLAX SECTION========================>*/
+    
+    #parallaxSection {
+        min-height: auto;
+        max-width: 100vw;
+        padding-bottom: 50px;
+    
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/parallax.png);
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    #parallaxArticle {
+        width: 80%;
+    }
+    
+    
+    /*<========================WHAT ARE CLIENTS SAY========================>*/
+    
+    
+    .clientSays {
+        height: auto;
+        max-width: 100vw;
+    }
+    
+    .clientSaysArticle {
+        width: 80%;
+        padding: 10px 10px;
+    }
+    
+    .clientLogo {
+        width: 80%;
+    }
+    
+    
+    
+    /*<========================PRICING SECTION========================>*/
+    
+    #pricingSection1 {
+        flex-direction: column;
+        max-width: 100vw;
+    }
+    
+    #pricingContainerParent {
+        width: 100%;
+        height: auto;
+    }
+    
+    #pricingArticle p{
+        text-align: justify;
+        margin: 20px 0;
+    }
+    
+    #pricingSpans {
+        justify-content: space-around;
+    }
+    
+    .learnMoreButton  {
+        margin: 25px 0;
+        align-self: center;
+    }
+    
+    #pricingImageContainer {
+        width: 100%;
+    }
+    
+    
+    #pricingSection2 {
+        height: auto;
+        padding: 25px 0;
+    }
+    
+    .pricingSectionArticle {
+        padding: 15px 40px;
+    }
+    
+    #priceCards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .priceCard {
+        width: 80%;
+        text-align: center;
+    }
+    
+    
+    /*<========================BLOG SECTION========================>*/
+    
+    #blogSection{
+        height: auto;
+        max-width: 100vw;
+    }
+    
+    .blogCard {
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .blogHeader {
+        width: 90%;
+        padding: 10px 10px;
+    }
+    
+    .blogArticles {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px 10px;
+    }
+    
+     .blogImages {
+        width: 100%;
+        height: auto;
+     }
+    }
+    
+    
+    
