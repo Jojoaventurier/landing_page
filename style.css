@@ -790,9 +790,8 @@ header{
     background-color: transparent;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: space-around;
   }
   
   .topnav #myLinks {
@@ -801,10 +800,8 @@ header{
   
   .topnav a {
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
   }
   
   #kucra {
@@ -815,8 +812,6 @@ header{
   .topnav a.icon {
     background: transparent;
     padding: 0;
-    width: 10%;
-    
   }
   
   .topnav a:hover {
