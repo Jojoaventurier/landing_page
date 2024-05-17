@@ -1194,6 +1194,7 @@ and (max-device-width : 1024px) {
     height: auto;
 }
 
+}
 /*<========================PRESENTATION SECTION========================>*/
 
 .presentationSection {
@@ -1286,6 +1287,7 @@ transition:transform .5s;
 position:absolute;
 width:100%;
 transform:translateY(-330px);
+z-index: 4;
 }
 
 #menu.show-menu{
@@ -1360,8 +1362,6 @@ h2 {
     width: 100vh;
 }
 
-
-}
 
 .card {
     max-width: 40%;
@@ -1556,4 +1556,3 @@ h4, h5 {
     z-index: 1;
  }
 
-}
